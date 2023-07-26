@@ -1,0 +1,22 @@
+<div class="form-area" mt-1>
+  <h2>Two way data Binding</h2>
+  <label> Product Name</label><br>
+  <input type="text" placeholder="Product name" [(ngModel)]="productName" >
+  <br>
+  <label>Product Price</label><br>
+  <input type="text" placeholder="Product name" [(ngModel)]="productPrice">
+  <br>
+  <label>Product URL</label><br>
+  <input type="text" placeholder="Product url" [(ngModel)]="productURl">
+  <br>
+  <label>Product Description</label><br>
+  <textarea cols="40" rows="5" placeholder="Product Description" [(ngModel)]="productDesc"></textarea>
+  <br><br>
+</div>
+
+<div class="preview-area">
+  <h4>{{productName}}</h4>
+  <img [src]="productURl" alt="">
+  <h4>{{productPrice}}</h4>
+  <h4>{{productDesc}}</h4>
+</div>
